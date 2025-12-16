@@ -1,29 +1,47 @@
 # Qualidade e Limpeza de Dados – Vendas de Cafeteria
 
 ## Objetivo
-Realizar a avaliação e o tratamento da qualidade dos dados de vendas de uma cafeteria, aplicando técnicas de limpeza para tornar o conjunto de dados confiável e pronto para análises posteriores no Power BI.
+Analisar a qualidade dos dados de vendas de uma cafeteria e realizar ajustes básicos de limpeza, com o objetivo de deixar o dataset mais organizado e adequado para análises no Power BI.
 
-O foco do projeto é identificar e documentar problemas comuns em dados brutos, como valores ausentes e registros inválidos.
+
 
 ## Dataset
-Dataset sintético de vendas de cafeteria contendo 10.000 registros, desenvolvido para simular um cenário realista de dados com problemas de qualidade (*dirty data*).
+Dataset sintético de vendas de cafeteria, criado para simular um cenário realista de dados com problemas de qualidade (*dirty data*).
 
 Principais colunas:
-- Item
-- Quantity
-- Price Per Unit
-- Total Spent
-- Payment Method
-- Location
-- Transaction Date
+- Item  
+- Quantity  
+- Price Per Unit  
+- Total Spent  
+- Payment Method  
+- Location  
+- Transaction Date  
 
 ## Problemas Identificados
-- Valores ausentes (`null`) em colunas numéricas e categóricas
+- Presença de valores ausentes (`null`)
 - Valores inválidos como `ERROR` e `UNKNOWN`
-- Campos incompletos que exigem tratamento antes de qualquer análise
+- Campos incompletos que precisam de tratamento antes da análise
 
-## Estratégia de Limpeza
+
 
 ## Ferramentas Utilizadas
 - Power BI (Power Query)
-- Git para versionamento e documentação
+- Git para versionamento do projeto
+
+## Análise Inicial do Dataset
+Foi feita uma análise inicial para entender a proporção de valores válidos em cada coluna.
+
+
+### Qualidade por Coluna
+- **Item:** 89% de valores válidos  
+- **Quantity:** 94% de valores válidos  
+- **Price Per Unit:** 93% de valores válidos  
+- **Total Spent:** 95% de valores válidos  
+- **Payment Method:** 68% de valores válidos  
+- **Location:** 63% de valores válidos  
+- **Transaction Date:** 94% de valores válidos  
+
+As colunas `Payment Method` e `Location` apresentam mais valores ausentes ou inválidos quando comparadas às colunas numéricas.
+
+## Decisões Iniciais de Tratamento
+- Valores inválidos como `ERROR` e `UNKNOWN` foram considerados dados ausentes e substituídos por `null`.
