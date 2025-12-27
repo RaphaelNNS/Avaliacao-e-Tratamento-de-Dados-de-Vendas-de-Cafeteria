@@ -45,6 +45,9 @@ O foco está em **avaliar, tratar e comunicar a qualidade dos dados**, garantind
 ---
 
 ## Dashboards
+![alt text](cafe_sales_page-0001.jpg)
+![alt text](cafe_sales_page-0002.jpg)
+
 O relatório está organizado em duas principais visões:
 
 ### 1. Qualidade dos dados (Antes do tratamento)
